@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Figuras geométricas | Reto 1</title>
+</head>
+<body>
+    <h1>Cálculos con figuras Geométricas</h1>
+    <section>
+        <p>Selecciona una opción:</p>
+        <ul>
+            <li id="dib_cuadrado" class="cuadrado" onclick="mostrarCuadrado()"></li>
+            <li id="dib_triangulo" class="triangulo" onclick="mostrarTriangulo()"></li>
+            <li id="dib_circulo" class="circulo" onclick="mostrarCirculo()"></li>
+        </ul>
+    </section>
+
+    
+    <section id="seccion_cuadrado" style="display: none;">
+    <h2>CUADRADO</h2>
+    <p>Calcular el perímetro y el área de un cuadrado </p>
+    <p class="notas">Unidad de medida: centímetros.</p>
+    <form>
+        <label for="InputCuadrado">
+           <h3>¿Cuánto mide cada lado del cuadrado?</h3> 
+        </label>
+        <br>
+        <input class="input" type="number" id="InputCuadrado">
+        <div class="error" id="mensaje_error" style="display:none;">
+        </div> 
+        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+        <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
+
+        
+        <div class="resultados" id="resultado_txt" style="display:none;">
+        </div>  
+    </form>
+    </section>
+
+    <section id="seccion_triangulo" style="display: none;">
+        <h2>TRIANGULO</h2>
+
+
+        <button class="button2" onclick="mostrarseccionPerimetroTriangulo()" >Perimetro</button>
+        <section id="perimetro_triangulo" style="display: none;">
+            <p>Vamos a calcular el perímetro</p>
+            <form>
+                <label for="lado1Triangulo">
+                    <h3>¿Cuánto mide el primer lado del triángulo?</h3> 
+                </label>
+                <input type="number" id="lado1Triangulo">
+                <div class="error" id="lado1_vacia" style="display: none;">Introduce un dato valido</div>
+
+                
+            </br>  
+                <label for="lado2Triangulo">
+                    <h3>¿Cuánto mide el segundo lado del triángulo?</h3> 
+                </label>
+                <input type="number" id="lado2Triangulo">
+                <div class="error" id="lado2_vacia" style="display: none;">Introduce un dato valido</div>
+
+                </br>   
+                <label for="baseTriangulo">
+                    <h3>¿Cuánto mide la base  del triángulo?</h3> 
+                </label>
+                <input type="number" id="baseTriangulo">
+                <div class="error" id="base_vacia" style="display: none;">Introduce un dato valido</div>
+
+            </br>  
+                
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                <div class="resultados" id="rdo_perimetrotriangulo" style="display:none;">
+                </div>
+            
+
+            </form>
+        </section>
+        <button class="button2" onclick="mostrarseccionAreaTriangulo()">Area</button>
+
+
+
+        
+            <section id="area_triangulo" style="display: none;">
+                <p>Vamos a calcular el área</p>
+                <form>
+                    <label for="base2Triangulo">
+                        <h3>¿Cuánto mide la base del triángulo?</h3>
+                    </label>
+                    <input type="number" id="base2Triangulo">
+                    <div class="error" id="base2_vacia" style="display: none;">Introduce un dato valido</div>
+
+                </br>  
+                    <label for="alturaTriangulo">
+                        <h3>¿Cuánto mide la altura del triángulo?</h3>
+                    </label>
+                    <input type="number" id="alturaTriangulo">
+                    <div class="error" id="altura_vacia" style="display: none;">Introduce un dato valido</div>
+
+                </br>  
+                    
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+                    <div class="resultados" id="rdo_areatriangulo" style="display:none;">
+                    </div>
+                    
+                </form>
+            </section>
+        </section>
+        <section id="seccion_circulo" style="display: none;">
+            <h2>CÍRCULO</h2>
+            <p>Vamos a calcular el perímetro y el área de un círculo</p>
+            <form>
+                <label for="InputRadio">
+                    <h3>¿Cuánto mide el radio del círculo?</h3>
+                </label>
+                <a rel="stylesheet" href="#" onclick="queEsElRadio()">¿qué es el radio de una circunferencia? </a>
+                <div id="radio" style="display: none;">
+                <img src="https://github.com/mjbarone/cursopracticoJS/blob/main/img/radio.pngcle" alt="">
+                </div>
+                <input type="number" id="InputRadio">
+                <button type="button" onclick="calcularPerimetroCirculo()">Perimetro</button>
+                <button type="button" onclick="calcularAreaCirculo()">Área</button>
+                <div class="error" id="radio_vacia" style="display: none;">Introduce un dato valido</div>
+
+                <div class="resultados" id="resultado_circulo" style="display:none;">
+                </div>
+            </form>
+            </section>
+    <script src="./figuras.js"></script>
+</body>
+</html>
