@@ -1,0 +1,141 @@
+body {
+  background-color: 0, 0, 0, 0;
+  font-family: "Fira Code", monospace;
+  color: #162c41;
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  justify-content: center;
+}
+
+a {
+  color: #3c0f6d;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+a:hover {
+  color: #a259e1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+  padding: 0px;
+}
+
+h1 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cb00ff;
+  color: #cb00ff;
+  font-size: 1.5 em;
+  padding: 0px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #cb00ff;
+  font-size: 1.2 em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+input {
+  border: 1px solid #e6e6e6;
+  width: 96%;
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Fira Code", monospace;
+  margin-top: 5px;
+}
+
+.button2 {
+  background-color: #a259e1;
+  color: #3c0f6d;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 5px;
+
+  font-family: "Fira Code", monospace;
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background: #a259e1;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 100px solid #cb00ff;
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #375a66;
+}
+
+.resultados {
+  background-color: #162c41;
+  padding: 10px;
+  width: auto;
+  text-transform: uppercase;
+  color: #cb00ff;
+  font-weight: normal;
+  font-size: 1.5em;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.notas {
+  color: #3c0f6d;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.label {
+  border-bottom: 1px solid #3c0f6d;
+  width: 100%;
+  margin: 0px;
+}
